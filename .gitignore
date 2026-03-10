@@ -1,0 +1,75 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# WordPress Core (if installed via Composer or downloaded separately)
+wp-admin/
+wp-includes/
+readme.html
+license.txt
+xmlrpc.php
+
+# WordPress config (often environment-specific)
+wp-config.php
+
+# Uploads (usually not tracked)
+wp-content/uploads/
+
+# Cache
+wp-content/cache/
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+
+# Backups
+wp-content/backup*
+wp-content/backups/
+*.sql
+*.gz
+*.zip
+*.tar
+
+# Upgrade files
+wp-content/upgrade/
+
+# Languages
+wp-content/languages/
+
+# Node / build tools (if theme uses npm)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Composer (if used)
+vendor/
+
+# Build files
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# System files
+.sass-cache/
+.cache/
+
+# Local development tools
+docker-compose.override.yml

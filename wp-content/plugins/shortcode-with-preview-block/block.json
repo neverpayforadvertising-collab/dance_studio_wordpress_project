@@ -1,0 +1,15 @@
+{
+	"name": "shortcode-preview/shortcode-preview",
+	"title": "Shortcode Preview",
+	"category": "widgets",
+	"icon": "shortcode",
+	"description": "Shows preview of any shortcode on editor side. It renders shortcode in the editor side so editor does not need to visit front side to check how it will look on frontside.",
+	"keywords": [ "shortcode", "render", "preview" ],
+	"attributes": {
+		"shortcodeText": {
+			"type": "string"
+		}
+	},
+    "editorStyle": "assets/css/block-style.css",
+    "editorScript": "block.build.js"
+}

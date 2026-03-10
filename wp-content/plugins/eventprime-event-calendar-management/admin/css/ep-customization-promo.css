@@ -1,0 +1,496 @@
+.ep-customization-promo-page {
+    --ep-accent: #4d5aff;
+    --ep-bg: #f3f5f8;
+    --ep-surface: #fff;
+    --ep-line: #d8dde6;
+    --ep-muted: #5f6b7a;
+    --ep-title: #1f2733;
+}
+
+.ep-customization-promo-page,
+.ep-customization-promo-page * {
+    box-sizing: border-box;
+}
+
+.ep-customization-promo-page .ep-promo-box,
+.ep-customization-promo-page .ep-promo-content {
+    margin: 0;
+    padding: 0;
+}
+
+.ep-customization-promo-page .ep-mundro-root {
+    margin: 0 0 0 -20px;
+    color: var(--ep-title);
+    background: var(--ep-bg);
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+.ep-customization-promo-page .ep-hero-title,
+.ep-customization-promo-page .ep-card-head-text,
+.ep-customization-promo-page .ep-metric,
+.ep-customization-promo-page .ep-panel-title {
+    font-family: Manrope, Inter, "Segoe UI", Arial, sans-serif;
+    letter-spacing: -0.01em;
+}
+
+.ep-customization-promo-page .ep-wp-shell {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: calc(100vh - 32px);
+}
+
+.ep-customization-promo-page .ep-wp-main {
+    display: grid;
+    grid-template-rows: 1fr;
+    min-width: 0;
+}
+
+.ep-customization-promo-page .ep-screen-wrap {
+    padding: 22px;
+}
+
+.ep-customization-promo-page .ep-service-shell {
+    overflow: hidden;
+    border: 1px solid var(--ep-line);
+    border-radius: 8px;
+    background: var(--ep-surface);
+}
+
+.ep-customization-promo-page .ep-hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    min-height: 220px;
+    border-bottom: 1px solid var(--ep-line);
+}
+
+.ep-customization-promo-page .ep-hero-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 28px 24px 36px;
+}
+
+.ep-customization-promo-page .ep-hero-icon {
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin: 0 0 10px;
+}
+
+.ep-customization-promo-page .ep-hero-kicker {
+    margin: 0 0 10px;
+    color: var(--ep-accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.ep-customization-promo-page .ep-hero-title {
+    max-width: 24ch;
+    margin: 0 0 12px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.ep-customization-promo-page .ep-hero-sub {
+    max-width: 95%;
+    margin: 0;
+    color: var(--ep-muted);
+    font-size: 17px;
+}
+
+.ep-customization-promo-page .ep-hero-art {
+    display: grid;
+    align-items: center;
+    border-left: 1px solid var(--ep-line);
+    background: #f7f9fc;
+}
+
+.ep-customization-promo-page .ep-hero-art img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 188px;
+    object-fit: cover;
+}
+
+.ep-customization-promo-page .ep-toolbar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+    align-items: center;
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--ep-line);
+}
+
+.ep-customization-promo-page .ep-search-wrap {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 14px;
+    border: 1px solid var(--ep-line);
+    border-radius: 999px;
+    background: #fff;
+}
+
+.ep-customization-promo-page .ep-search-wrap input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--ep-title);
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.ep-customization-promo-page .ep-search-wrap input::placeholder {
+    color: #8b97a6;
+}
+
+.ep-customization-promo-page .ep-content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.ep-customization-promo-page .ep-cards-area {
+    padding: 22px 24px 26px;
+    border-right: 1px solid var(--ep-line);
+}
+
+.ep-customization-promo-page .ep-cards-masonry {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    align-items: start;
+}
+
+.ep-customization-promo-page .ep-service-card {
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid var(--ep-line);
+    border-radius: 6px;
+    background: #fff;
+    transition: border-color 0.2s ease;
+}
+
+.ep-customization-promo-page .ep-service-card:hover {
+    border-color: #bcc6d6;
+}
+
+.ep-customization-promo-page .ep-card-head {
+    position: relative;
+    display: block;
+    padding: 14px 16px 8px 62px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.ep-customization-promo-page .ep-card-head-text {
+    line-height: 1.25;
+}
+
+.ep-customization-promo-page .ep-card-icon-wrap {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    display: inline-flex;
+}
+
+.ep-customization-promo-page .ep-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+.ep-customization-promo-page .ep-card-icon .dashicons {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+.ep-customization-promo-page .ep-card-icon-blue {
+    color: #2f4ad2;
+    background: linear-gradient(145deg, #f4f6ff 0%, #eef2ff 100%);
+}
+
+.ep-customization-promo-page .ep-card-icon-mint {
+    color: #17785d;
+    background: linear-gradient(145deg, #f2fbf7 0%, #eaf8f1 100%);
+}
+
+.ep-customization-promo-page .ep-card-icon-violet {
+    color: #5a3ac3;
+    background: linear-gradient(145deg, #f6f2ff 0%, #f0eaff 100%);
+}
+
+.ep-customization-promo-page .ep-card-icon-peach {
+    color: #9a4a2a;
+    background: linear-gradient(145deg, #fff6f1 0%, #ffefe6 100%);
+}
+
+.ep-customization-promo-page .ep-card-body {
+    display: -webkit-box;
+    overflow: hidden;
+    min-height: 36px;
+    padding: 0 16px 14px 62px;
+    color: var(--ep-muted);
+    font-size: 12.5px;
+    line-height: 1.45;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.ep-customization-promo-page .ep-card-meta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 16px 16px 62px;
+}
+
+.ep-customization-promo-page .ep-custom-fallback .ep-card-head {
+    color: var(--ep-accent);
+}
+
+.ep-customization-promo-page .ep-card-cta {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 999px;
+    color: var(--ep-accent);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.ep-customization-promo-page .ep-card-cta::after {
+    content: "->";
+    font-size: 11px;
+    line-height: 1;
+}
+
+.ep-customization-promo-page .ep-card-cta:hover {
+    color: #3544d8;
+    background: #eef1ff;
+}
+
+.ep-customization-promo-page .ep-side-panel {
+    display: grid;
+    gap: 14px;
+    align-content: start;
+    padding: 18px 18px 24px;
+    background: #fafbfd;
+}
+
+.ep-customization-promo-page .ep-panel-block {
+    position: relative;
+    overflow: hidden;
+    padding: 14px;
+    border: 1px solid var(--ep-line);
+    border-radius: 6px;
+    background: #fff;
+}
+
+.ep-customization-promo-page .ep-how-card {
+    border-color: #dbe5ff;
+    background: linear-gradient(180deg, #f5f8ff 0%, #fff 100%);
+}
+
+.ep-customization-promo-page .ep-how-card::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    background: #8ea1ff;
+    content: "";
+}
+
+.ep-customization-promo-page .ep-panel-title {
+    margin: 0 0 8px;
+    color: #58708f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.ep-customization-promo-page .ep-metric {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ep-customization-promo-page .ep-metric-sub {
+    margin: 2px 0 0;
+    color: var(--ep-muted);
+    font-size: 12px;
+}
+
+.ep-customization-promo-page .ep-feedback-quote {
+    margin: 0;
+    color: #4d5a6d;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.ep-customization-promo-page .ep-feedback-person {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ep-customization-promo-page .ep-feedback-avatar {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--ep-line);
+    border-radius: 999px;
+    background: #eef1f7;
+    object-fit: cover;
+}
+
+.ep-customization-promo-page .ep-feedback-name {
+    margin: 0;
+    color: #2d3747;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.ep-customization-promo-page .ep-feedback-role {
+    margin: 1px 0 0;
+    color: #6c7888;
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+.ep-customization-promo-page .ep-expect-card {
+    border-color: #cfd6ff;
+    background: linear-gradient(180deg, #f8f9ff 0%, #fff 100%);
+}
+
+.ep-customization-promo-page .ep-expect-card::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    background: var(--ep-accent);
+    content: "";
+}
+
+.ep-customization-promo-page .ep-expect-card .ep-metric {
+    color: var(--ep-accent);
+    letter-spacing: 0.01em;
+}
+
+.ep-customization-promo-page .ep-expect-flow {
+    display: grid;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.ep-customization-promo-page .ep-expect-step {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 8px;
+    align-items: center;
+    color: #4f5d71;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.ep-customization-promo-page .ep-expect-dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #bfc8ff;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--ep-accent);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.ep-customization-promo-page .ep-request-anchor {
+    margin-top: 14px;
+    padding: 16px 18px;
+    border: 1px solid var(--ep-line);
+    border-radius: 8px;
+    background: #fff;
+}
+
+.ep-customization-promo-page .ep-request-title {
+    margin: 0 0 6px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ep-customization-promo-page .ep-request-copy {
+    margin: 0;
+    color: var(--ep-muted);
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.ep-customization-promo-page .ep-request-button {
+    margin-top: 12px;
+}
+
+body.em_event_page_ep-customization-promo #wpfooter {
+    display: none;
+}
+
+@media (max-width: 1380px) {
+    .ep-customization-promo-page .ep-hero-title {
+        font-size: 31px;
+    }
+
+    .ep-customization-promo-page .ep-hero-sub {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .ep-customization-promo-page .ep-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ep-customization-promo-page .ep-cards-area {
+        border-right: 0;
+        border-bottom: 1px solid var(--ep-line);
+    }
+}
+
+@media (max-width: 1024px) {
+    .ep-customization-promo-page .ep-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ep-customization-promo-page .ep-hero-art {
+        border-top: 1px solid var(--ep-line);
+        border-left: 0;
+    }
+
+    .ep-customization-promo-page .ep-cards-masonry {
+        grid-template-columns: 1fr;
+    }
+
+    .ep-customization-promo-page .ep-toolbar {
+        grid-template-columns: 1fr;
+    }
+}
